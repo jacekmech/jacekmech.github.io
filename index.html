@@ -1,1 +1,137 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacek Mech - Personal Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f0f4f8;
+        }
+        header {
+            background-color: #0a2540;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1b3a57;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #2c4d70;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            background-color: #0a2540;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #0a2540;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e3eaf3;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #1b3a57;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jacek Mech</h1>
+        <p>VP of Engineering | Agile Enthusiast | Software Engineer</p>
+    </header>
+    <nav>
+        <a href="#cv" onclick="showSection('cv')">CV</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+    </nav>
+    <div class="container">
+        <section id="cv" class="active">
+            <h2>Curriculum Vitae</h2>
+            <h3>Summary</h3>
+            <p>Leader, agile methods enthusiast, engineering manager, and software engineer. Currently VP of Engineering at Schwarz Media Platform, focused on goal-oriented work organization, transparency, and iterative discovery.</p>
+            
+            <h3>Experience</h3>
+            <ul>
+                <li><strong>VP Engineering - Schwarz Media Platform</strong> (Jan 2023 - Present)</li>
+                <li><strong>SVP Engineering - TrustYou GmbH</strong> (2021 - 2023)</li>
+                <li><strong>Director of Engineering - TrustYou GmbH</strong> (2017 - 2020)</li>
+                <li><strong>Team Manager - TrustYou GmbH</strong> (2014 - 2017)</li>
+                <li><strong>Senior Software Architect - TrustYou GmbH</strong> (2011 - 2013)</li>
+                <li><strong>Technical Project Manager - TrustYou GmbH</strong> (2013 - 2016)</li>
+                <li><strong>Software Developer & Team Leader - ABG S.A.</strong> (2002 - 2006)</li>
+            </ul>
+            
+            <h3>Education</h3>
+            <ul>
+                <li><strong>Master’s Degree in Economics</strong>, Wrocław University of Economics (1997 - 2002)</li>
+                <li><strong>Master’s Degree in Computer Science</strong>, Wrocław University of Technology (1995 - 2000)</li>
+            </ul>
+            
+            <h3>Skills</h3>
+            <ul>
+                <li>Engineering Management</li>
+                <li>Agile & Scrum</li>
+                <li>Software Architecture</li>
+                <li>DevOps</li>
+                <li>Cloud Computing</li>
+            </ul>
+            
+            <h3>Certifications</h3>
+            <ul>
+                <li>Professional Scrum Product Owner (2018)</li>
+                <li>Professional Scrum Master (2014)</li>
+                <li>Sun Certified Enterprise Architect for Java (2004)</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Work in progress...</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Jacek Mech. All rights reserved.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
