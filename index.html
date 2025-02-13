@@ -167,7 +167,7 @@
                 <li>
                 	<strong>Senior Developer - HDPublish</strong> (Jan 2010 - Jan 2011)
 		        <p>Software design and development with main focus on HDtrack - eCRM webtool for PR & communication professionals.<br>
-		        Key technologies: Java, Enterprise JavaBeans, MySQL, Apache Solr
+		        Key technologies: Java, JSF, MySQL, Apache Solr
 		        </p>
                 </li>
                 <li>
@@ -179,7 +179,7 @@
                 <li>
                 	<strong>Senior Technical Consultant - Autonomy</strong> (acquired by HP) (Feb 2006 - Oct 2007)
 		        <p>Software design and development. Member of the team responsible for Aungate EDD development. Lead engineer responsible for implementation of KPMG specific extensions.<br>
-		        Key technologies: Java, JBoss, Microsoft SQL (JEE5 entity beans access), Autonomy IDOL full text search engine
+		        Key technologies: Java, EJBs JBoss, Microsoft SQL (JEE5 entity beans access), Autonomy IDOL full text search engine
 		        </p>
                 </li>
                 <li>
@@ -212,8 +212,46 @@
         </section>
         <section id="projects">
             <h3>Projects</h3>
-            <p>Work in progress ...
+            <p>This page presents my most important engineering projects undertaken independently of my daily job. The list primarily highlights projects from after 2013, when I shifted my daily work toward engineering management. My engineering work prior to 2013 is briefly outlined on the <a href="#profile" onclick="showSection('profile')">Profile</a> page.
             </p>
+            <ul>
+                <li>
+		        <strong>TwojaOkolica .Online</strong> (independent project) (Apr 2023 - Present)
+		        <p><a href="https://en.twojaokolica.online" target="_blank">TwojaOkolica .Online</a> service is a project aimed at providing on the Internet information about regions and locations in Poland. The service is addressed both to people looking for information on the regions where they permanently reside, as well as to people traveling and staying at a given moment only temporarily, e.g. on vacation or business trip.
+			</p>
+			<p>The service allows searching for regions, presents region's basic demographic data, directions to and within the region, and provides a list of leisure and service amenities located within region's boundaries. In the maps section, it is possible to view the region's map and create custom map versions with user defined locations and selected amenities.
+		        </p>
+		        <p>Key technologies: microservices-based architecture, NodeJS-based data processing pipelines, NodeJS and Express-based RESTFul APIs, ReactJS-based web application, PostgreSQL database, backend hosted on Hetzner Cloud, frontend provided via on AWS's CloudFront, CI/CD via Docker and Docker Compose, integration with OpenStreetMap database for regions and amenities data.
+		        </p>
+                </li>
+                <li>
+		        <strong>MapSimple - HDpublish GmbH</strong> (Oct 2021 - Nov 2022)
+		        <p>MapSimple is a multi-tenant platform for building custom map applications with user-defined locations on web and mobile platforms. The product was developed for HDpublish GmbH.
+		        </p>
+		        <p>The map builder functionality included a WYSIWYG editor for providing detailed location descriptions and allowed integration with Google's directions feature (via a redirect to the Google Maps website on desktop and the Google Maps app on mobile). The platform also offered the ability to generate a mobile version of the map for both Android and iPhone, making the custom map application accessible on mobile devices.
+		        </p>
+		        <p>Key technologies: NodeJS and Express-based RESTFul API, ReactJS-based web application, PostgreSQL database, backend and frontend hosted on AWS Cloud (EC2 instances), CI/CD via Docker and Docker Compose, React Native with Expo Go for mobile app
+		        </p>
+                </li>
+                <li>
+		        <strong>PIK 2.0 (Customers and Products Management) - DFG Sp. z o.o.</strong> (Nov 2019 - Present)
+		        <p>PIK 2.0 is a complete rewrite of a platform for customer and electronic forms management. The product was developed for DFG Sp. z o.o. and remains actively used and maintained.
+		        </p>
+		        <p>The product enables customer management and offers a flexible representation of company products through the dynamic definition of product details. It also provides spreadsheet-like reporting capabilities, including listings, aggregations, and filtering.
+		        </p>
+		        <p>Key technologies: NodeJS and Express-based RESTFul API, ReactJS-based web application, PostgreSQL database, backend and frontend hosted on homecloud platform.
+		        </p>
+                </li>
+                <li>
+		        <strong>Media Manager</strong> (independent project) (2009 - 2012)
+		        <p>Media Manager was a platform for managing files through a web interface, with files stored locally on the server's file system. The product was licensed to several small businesses in Poland and Germany.
+		        </p>
+		        <p>The product supported multi-user access and allowed file uploads, downloads, and deletions within a file tree synchronized with the server's file system. It also enabled document tagging and tag-based search. User management could optionally be integrated with external systems via an LDAP interface.
+		        </p>
+		        <p>Key technologies: Java, JSF, MySQL database, ImageMagick for images processing, LDAP integration for users management.
+		        </p>
+                </li>
+            <ul>
         </section>
     </div>
     <script>
