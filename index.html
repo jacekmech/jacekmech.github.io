@@ -77,20 +77,23 @@
             border-left: none;
         }
     </style>
+    <link rel="shortcut icon" type="image/png" href="favicon-24x24.png">
 </head>
 <body>
     <header>
         <h1>Jacek Mech</h1>
-        <p>Engineering Manager | Agile Enthusiast | Software Engineer</p>
+        <p>Engineering Manager | Software Engineer | GIS Enthusiast </p>
     </header>
     <nav>
         <a href="#profile" onclick="showSection('profile')">Profile</a>
         <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#services" onclick="showSection('services')">Services</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
     </nav>
     <div class="container">
         <section id="profile" class="active">
             <h3>About Me</h3>
-            <p>Leader, agile methods enthusiast, engineering manager, and software engineer. Currently busy as VP of Engineering at Schwarz Media Platform, striving for goal-oriented work organization, bottom-up initiative, transparency, and iterative discovery. I started my professional career 25 years ago as a software developer and continued my work in the positions of systems analyst and software architect, eventually stepping on the path of engineering management. My professional goal is to build and deliver excellent software products while improving software engineering know-how on individual, team, and organization levels.
+            <p>Leader, engineering manager, software engineer, and GIS enthusiast. Currently busy as VP of Engineering at Schwarz Media Platform, striving for goal-oriented work organization, bottom-up initiative, transparency, and iterative discovery. I started my professional career 25 years ago as a software developer and continued my work in the positions of systems analyst and software architect, eventually stepping on the path of engineering management. My professional goal is to build and deliver excellent software products while improving software engineering know-how on individual, team, and organization levels.
             </p>
             
             <h3>Experience</h3>
@@ -102,13 +105,13 @@
 		        <p>Notable achievements:
 			<ul class='simple'>
 				<li>Building and leading Engineering Management Team.</li>
-				<li>Hiring QA Lead and supporting her in introduction of QA best practices.</li>
-				<li>Improving cross-team software delivery processes.</li>
+				<li>Streamlining cross-team software delivery processes.</li>
+				<li>Helping introduce QA practices into the organization.</li>
 				<li>Helping deliver the first version of the SMP (Platform).</li>
 				<li>Integrating Insights Data Platform ecosystem into SMP.</li>
 				<li>Introducing the On-Call Duty.</li>
-				<li>Managing the SMP rollout to all European countries (work in progress).</li>
-				<li>Introducing the SLOs for the customer facing systems (work in progress).</li>
+				<li>Managing the SMP rollout to multiple European countries.</li>
+				<li>Initiating the rollout of the SLOs for the customer facing systems.</li>
 			</ul>
 		        </p>
 
@@ -260,6 +263,41 @@
                 </li>
             <ul>
         </section>
+	<section id="services">
+	    <h3>Services</h3>
+	    <p>As an independent GIS software consultant and developer, I help businesses harness the power of <strong>geospatial</strong> data through <strong>data ingestion, analysis, visualization, and system integration</strong>. I design and build solutions that make location-based data actionable, whether for internal use, customer-facing applications, or third-party integrations. The key areas of focus are outlined below.</p>
+	    
+	    <ul>
+		    <li>
+			    <strong>Geospatial Data Ingestion</strong>
+			    <p>Geospatial data from various sources—such as <strong>OpenStreetMap, WorldPop, and custom datasets</strong>—can be seamlessly integrated into existing business systems or dedicated data stores to enhance analysis and visualization. The process ensures that data is accurate, scalable, and efficiently handled, whether it needs to be synchronized with third-party services or processed through tailored data workflows.</p>
+		    </li>
+		    <li>
+			    <strong>Geographical Data Processing & Analysis</strong>
+			    <p>Spatial data can be analyzed to uncover trends and support informed decision-making across various industries. Techniques such as <strong>data grouping, enrichment, and trend analysis</strong> help turn raw geographical data into meaningful business insights that improve efficiency and strategic planning.</p>
+		    </li>
+		    <li>
+			    <strong>Custom Web Applications and Widgets</strong>
+			    <p>The development of <strong>interactive geospatial applications</strong> enables users to engage with spatial data through <strong>custom-built maps, real-time data tables, and navigation tools</strong>. Solutions range from small embedded widgets to full-fledged web applications, ensuring adaptability to various use cases.
+		    </li>
+		    <li>
+			    <strong>Printable Geospatial Data Presentation</strong>
+			    <p>High-quality printable exports are generated in formats such as <strong>PDF and Excel</strong> to support reporting, compliance, and offline analysis. Customizable map designs ensure that spatial data can be effectively communicated in print-ready formats, tailored to meet specific business needs.</p>
+		    </li>
+		    <li>
+			    <strong>Third-Party BI & System Integration</strong>
+			    <p>The integration of geospatial data with <strong>Business Intelligence (BI) platforms</strong> like <strong>Looker</strong>, as well as with <strong>third-party APIs</strong>, enhances analytics and decision-making capabilities. The embedding of <strong>location-based insights into BI ecosystems</strong> ensures greater value extraction from spatial data.</p>
+		    </ul>
+	    </li>
+	    <strong>Key Technologies</strong>
+	    <p>PostgreSQL, PostGIS, BigQuery, NodeJS, ReactJS, OpenStreetMap Valhalla, OpenStreetMap Nominatim, Mapbox, Google Maps, Docker, Docker Compose, AWS, GCP, Hetzner, OpenAI API, Looker, OpenStreetMap Data, WorldPop Data</p>
+	</section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>Feel free to reach out to me at <a href="mailto:jmech.dev@gmail.com">jmech.dev@gmail.com</a> if you found anything of interest in the Profile, Projects, or Services sections and would like to explore a potential collaboration or simply have a conversation about the topics covered there.
+            </p>
+        </section>
+
     </div>
     <script>
         function showSection(sectionId) {
