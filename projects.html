@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacek Mech - Personal Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f0f4f8;
+        }
+        header {
+            background-color: #0a2540;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1b3a57;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #2c4d70;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            background-color: #0a2540;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #0a2540;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e3eaf3;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #1b3a57;
+        }
+        ul.simple {
+            list-style-type: square;
+            padding: 0;
+        }
+        ul.simple li {
+            background: #e3eaf3;
+            margin: 5px 20px;
+            padding: 0px;
+            border-left: none;
+        }
+    </style>
+    <link rel="shortcut icon" type="image/png" href="favicon-24x24.png">
+</head>
+<body>
+    <header>
+        <h1>Jacek Mech</h1>
+        <p>Engineering Manager | Software Engineer | GIS Enthusiast </p>
+    </header>
+    <nav>
+        <a href="index.html#profile">Profile</a>
+        <a href="projects.html#projects">Projects</a>
+        <a href="services.html#services">Services</a>
+        <a href="contact.html#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="projects" class="active">
+            <h3>Projects</h3>
+            <p>This page presents my most important engineering projects undertaken independently of my daily job. The list primarily highlights projects from after 2013, when I shifted my daily work toward engineering management. My engineering work prior to 2013 is briefly outlined on the <a href="#profile" onclick="showSection('profile')">Profile</a> page.
+            </p>
+            <ul>
+                <li>
+		        <strong>AI Exchange .Live</strong> (independent project, hackathon) (March 2025)
+		        <p><a href="https://ai-exchange.live" target="_blank">AI Exchange .Live</a> is a platform that provides daily updated currency exchange rates and AI-powered market insights. It covers the overall currency exchange market as well as detailed data for the top 10 currency pairs. The platform uses artificial intelligence to analyze market trends, offering predictions and valuable insights for traders and investors.
+		        </p>
+		        <p>Key technologies: microservices-based architecture, NodeJS-based data processing pipelines, NodeJS and Express-based RESTFul APIs, ReactJS-based web application, PostgreSQL database, backend hosted on Hetzner Cloud, frontend provided via on AWS's CloudFront, CI/CD via Docker and Docker Compose, integration with OpenAI AI for currency exchange market insights.
+		        </p>
+                </li>
+                <li>
+		        <strong>TwojaOkolica .Online</strong> (independent project) (Apr 2023 - Present)
+		        <p><a href="https://en.twojaokolica.online" target="_blank">TwojaOkolica .Online</a> service is a project aimed at providing on the Internet information about regions and locations in Poland. The service is addressed both to people looking for information on the regions where they permanently reside, as well as to people traveling and staying in a given region only temporarily, e.g. on vacation or business trip.
+			</p>
+			<p>The service allows searching for regions, presents region's basic demographic data, directions to and within the region, and provides a list of leisure and service amenities located within region's boundaries. In the maps section, it is possible to view the region's map and create custom map versions with user defined locations and selected amenities.
+		        </p>
+		        <p>Key technologies: microservices-based architecture, NodeJS-based data processing pipelines, NodeJS and Express-based RESTFul APIs, ReactJS-based web application, PostgreSQL database, backend hosted on Hetzner Cloud, frontend provided via on AWS's CloudFront, CI/CD via Docker and Docker Compose, integration with OpenStreetMap database for regions and amenities data.
+		        </p>
+                </li>
+                <li>
+		        <strong>MapSimple - HDpublish GmbH</strong> (Oct 2021 - Nov 2022)
+		        <p>MapSimple is a multi-tenant platform for building custom map applications with user-defined locations on web and mobile platforms. The product was developed for HDpublish GmbH.
+		        </p>
+		        <p>The map builder functionality included a WYSIWYG editor for providing detailed location descriptions and allowed integration with Google's directions feature (via a redirect to the Google Maps website on desktop and the Google Maps app on mobile). The platform also offered the ability to generate a mobile version of the map for both Android and iPhone, making the custom map application accessible on mobile devices.
+		        </p>
+		        <p>Key technologies: NodeJS and Express-based RESTFul API, ReactJS-based web application, PostgreSQL database, backend and frontend hosted on AWS Cloud (EC2 instances), CI/CD via Docker and Docker Compose, React Native with Expo Go for mobile app
+		        </p>
+                </li>
+                <li>
+		        <strong>PIK 2.0 (Customers and Products Management) - DFG Sp. z o.o.</strong> (Nov 2019 - Present)
+		        <p>PIK 2.0 is a complete rewrite of a platform for customer and electronic forms management. The product was developed for DFG Sp. z o.o. and remains actively used and maintained.
+		        </p>
+		        <p>The product enables customer management and offers a flexible representation of company products through the dynamic definition of product details. It also provides spreadsheet-like reporting capabilities, including listings, aggregations, and filtering.
+		        </p>
+		        <p>Key technologies: NodeJS and Express-based RESTFul API, ReactJS-based web application, PostgreSQL database, backend and frontend hosted on homecloud platform.
+		        </p>
+                </li>
+                <li>
+		        <strong>Media Manager</strong> (independent project) (2009 - 2012)
+		        <p>Media Manager was a platform for managing files through a web interface, with files stored locally on the server's file system. The product was licensed to several small businesses in Poland and Germany.
+		        </p>
+		        <p>The product supported multi-user access and allowed file uploads, downloads, and deletions within a file tree synchronized with the server's file system. It also enabled document tagging and tag-based search. User management could optionally be integrated with external systems via an LDAP interface.
+		        </p>
+		        <p>Key technologies: Java, JSF, MySQL database, ImageMagick for images processing, LDAP integration for users management.
+		        </p>
+                </li>
+            <ul>
+        </section>
+    </div>
+</body>
+</html>

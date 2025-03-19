@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacek Mech - Personal Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f0f4f8;
+        }
+        header {
+            background-color: #0a2540;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1b3a57;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #2c4d70;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            background-color: #0a2540;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #0a2540;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e3eaf3;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #1b3a57;
+        }
+        ul.simple {
+            list-style-type: square;
+            padding: 0;
+        }
+        ul.simple li {
+            background: #e3eaf3;
+            margin: 5px 20px;
+            padding: 0px;
+            border-left: none;
+        }
+    </style>
+    <link rel="shortcut icon" type="image/png" href="favicon-24x24.png">
+</head>
+<body>
+    <header>
+        <h1>Jacek Mech</h1>
+        <p>Engineering Manager | Software Engineer | GIS Enthusiast </p>
+    </header>
+    <nav>
+        <a href="index.html#profile">Profile</a>
+        <a href="projects.html#projects">Projects</a>
+        <a href="services.html#services">Services</a>
+        <a href="contact.html#contact">Contact</a>
+    </nav>
+    <div class="container">
+	<section id="services" class="active">
+	    <h3>Services</h3>
+	    <p>As an independent GIS software consultant and developer, I help businesses harness the power of <strong>geospatial</strong> data through <strong>data ingestion, analysis, visualization, and system integration</strong>. I design and build solutions that make location-based data actionable, whether for internal use, customer-facing applications, or third-party integrations. The key areas of focus are outlined below.</p>
+	    
+	    <ul>
+		    <li>
+			    <strong>Geospatial Data Ingestion</strong>
+			    <p>Geospatial data from various sources—such as <strong>OpenStreetMap, WorldPop, and custom datasets</strong>—can be seamlessly integrated into existing business systems or dedicated data stores to enhance analysis and visualization. The process ensures that data is accurate, scalable, and efficiently handled, whether it needs to be synchronized with third-party services or processed through tailored data workflows.</p>
+		    </li>
+		    <li>
+			    <strong>Geographical Data Processing & Analysis</strong>
+			    <p>Spatial data can be analyzed to uncover trends and support informed decision-making across various industries. Techniques such as <strong>data grouping, enrichment, and trend analysis</strong> help turn raw geographical data into meaningful business insights that improve efficiency and strategic planning.</p>
+		    </li>
+		    <li>
+			    <strong>Custom Web Applications and Widgets</strong>
+			    <p>The development of <strong>interactive geospatial applications</strong> enables users to engage with spatial data through <strong>custom-built maps, real-time data tables, and navigation tools</strong>. Solutions range from small embedded widgets to full-fledged web applications, ensuring adaptability to various use cases.
+		    </li>
+		    <li>
+			    <strong>Printable Geospatial Data Presentation</strong>
+			    <p>High-quality printable exports are generated in formats such as <strong>PDF and Excel</strong> to support reporting, compliance, and offline analysis. Customizable map designs ensure that spatial data can be effectively communicated in print-ready formats, tailored to meet specific business needs.</p>
+		    </li>
+		    <li>
+			    <strong>Third-Party BI & System Integration</strong>
+			    <p>The integration of geospatial data with <strong>Business Intelligence (BI) platforms</strong> like <strong>Looker</strong>, as well as with <strong>third-party APIs</strong>, enhances analytics and decision-making capabilities. The embedding of <strong>location-based insights into BI ecosystems</strong> ensures greater value extraction from spatial data.</p>
+		    </ul>
+	    </li>
+	    <strong>Key Technologies</strong>
+	    <p>PostgreSQL, PostGIS, BigQuery, NodeJS, ReactJS, OpenStreetMap Valhalla, OpenStreetMap Nominatim, Mapbox, Google Maps, Docker, Docker Compose, AWS, GCP, Hetzner, OpenAI API, Looker, OpenStreetMap Data, WorldPop Data</p>
+	</section>
+    </div>
+</body>
+</html>
