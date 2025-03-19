@@ -85,10 +85,10 @@
         <p>Engineering Manager | Software Engineer | GIS Enthusiast </p>
     </header>
     <nav>
-        <a href="#profile" onclick="showSection('profile')">Profile</a>
-        <a href="#projects" onclick="showSection('projects')">Projects</a>
-        <a href="#services" onclick="showSection('services')">Services</a>
-        <a href="#contact" onclick="showSection('contact')">Contact</a>
+        <a href="index.html#profile">Profile</a>
+        <a href="projects.html#projects">Projects</a>
+        <a href="services.html#services">Services</a>
+        <a href="contact.html#contact">Contact</a>
     </nav>
     <div class="container">
         <section id="profile" class="active">
@@ -213,105 +213,6 @@
                 <li>Sun Certified Programmer for the Java 2 Platform (2002)</li>
             </ul>
         </section>
-        <section id="projects">
-            <h3>Projects</h3>
-            <p>This page presents my most important engineering projects undertaken independently of my daily job. The list primarily highlights projects from after 2013, when I shifted my daily work toward engineering management. My engineering work prior to 2013 is briefly outlined on the <a href="#profile" onclick="showSection('profile')">Profile</a> page.
-            </p>
-            <ul>
-                <li>
-		        <strong>AI Exchange .Live</strong> (independent project, hackathon) (March 2025)
-		        <p><a href="https://ai-exchange.live" target="_blank">AI Exchange .Live</a> is a platform that provides daily updated currency exchange rates and AI-powered market insights. It covers the overall currency exchange market as well as detailed data for the top 10 currency pairs. The platform uses artificial intelligence to analyze market trends, offering predictions and valuable insights for traders and investors.
-		        </p>
-		        <p>Key technologies: microservices-based architecture, NodeJS-based data processing pipelines, NodeJS and Express-based RESTFul APIs, ReactJS-based web application, PostgreSQL database, backend hosted on Hetzner Cloud, frontend provided via on AWS's CloudFront, CI/CD via Docker and Docker Compose, integration with OpenAI AI for currency exchange market insights.
-		        </p>
-                </li>
-                <li>
-		        <strong>TwojaOkolica .Online</strong> (independent project) (Apr 2023 - Present)
-		        <p><a href="https://en.twojaokolica.online" target="_blank">TwojaOkolica .Online</a> service is a project aimed at providing on the Internet information about regions and locations in Poland. The service is addressed both to people looking for information on the regions where they permanently reside, as well as to people traveling and staying in a given region only temporarily, e.g. on vacation or business trip.
-			</p>
-			<p>The service allows searching for regions, presents region's basic demographic data, directions to and within the region, and provides a list of leisure and service amenities located within region's boundaries. In the maps section, it is possible to view the region's map and create custom map versions with user defined locations and selected amenities.
-		        </p>
-		        <p>Key technologies: microservices-based architecture, NodeJS-based data processing pipelines, NodeJS and Express-based RESTFul APIs, ReactJS-based web application, Mapbox for maps, PostgreSQL database, PostGIS for geospatial data analysis, OpenStreetMap Valhalla, OpenStreetMap Nominatim, backend hosted on Hetzner Cloud, frontend provided via on AWS's CloudFront, CI/CD via Docker and Docker Compose, integration with OpenStreetMap database for regions and amenities data, integration with WorldPop for population data.
-		        </p>
-                </li>
-                <li>
-		        <strong>MapSimple - HDpublish GmbH</strong> (Oct 2021 - Nov 2022)
-		        <p>MapSimple is a multi-tenant platform for building custom map applications with user-defined locations on web and mobile platforms. The product was developed for HDpublish GmbH.
-		        </p>
-		        <p>The map builder functionality included a WYSIWYG editor for providing detailed location descriptions and allowed integration with Google's directions feature (via a redirect to the Google Maps website on desktop and the Google Maps app on mobile). The platform also offered the ability to generate a mobile version of the map for both Android and iPhone, making the custom map application accessible on mobile devices.
-		        </p>
-		        <p>Key technologies: NodeJS and Express-based RESTFul API, ReactJS-based web application, Mapbox for visualization of user-locations, PostgreSQL database, backend and frontend hosted on AWS Cloud (EC2 instances), CI/CD via Docker and Docker Compose, React Native with Expo Go for mobile app
-		        </p>
-                </li>
-                <li>
-		        <strong>PIK 2.0 (Customers and Products Management) - DFG Sp. z o.o.</strong> (Nov 2019 - Present)
-		        <p>PIK 2.0 is a complete rewrite of a platform for customer and electronic forms management. The product was developed for DFG Sp. z o.o. and remains actively used and maintained.
-		        </p>
-		        <p>The product enables customer management and offers a flexible representation of company products through the dynamic definition of product details. It also provides spreadsheet-like reporting capabilities, including listings, aggregations, and filtering.
-		        </p>
-		        <p>Key technologies: NodeJS and Express-based RESTFul API, ReactJS-based web application, PostgreSQL database, backend and frontend hosted on homecloud platform.
-		        </p>
-                </li>
-                <li>
-		        <strong>Media Manager</strong> (independent project) (2009 - 2012)
-		        <p>Media Manager was a platform for managing files through a web interface, with files stored locally on the server's file system. The product was licensed to several small businesses in Poland and Germany.
-		        </p>
-		        <p>The product supported multi-user access and allowed file uploads, downloads, and deletions within a file tree synchronized with the server's file system. It also enabled document tagging and tag-based search. User management could optionally be integrated with external systems via an LDAP interface.
-		        </p>
-		        <p>Key technologies: Java, JSF, MySQL database, ImageMagick for images processing, LDAP integration for users management.
-		        </p>
-                </li>
-            <ul>
-        </section>
-	<section id="services">
-	    <h3>Services</h3>
-	    <p>As an independent GIS software consultant and developer, I help businesses harness the power of <strong>geospatial</strong> data through <strong>data ingestion, analysis, visualization, and system integration</strong>. I design and build solutions that make location-based data actionable, whether for internal use, customer-facing applications, or third-party integrations. The key areas of focus are outlined below.</p>
-	    
-	    <ul>
-		    <li>
-			    <strong>Geospatial Data Ingestion</strong>
-			    <p>Geospatial data from various sources—such as <strong>OpenStreetMap, WorldPop, and custom datasets</strong>—can be seamlessly integrated into existing business systems or dedicated data stores to enhance analysis and visualization. The process ensures that data is accurate, scalable, and efficiently handled, whether it needs to be synchronized with third-party services or processed through tailored data workflows.</p>
-		    </li>
-		    <li>
-			    <strong>Geographical Data Processing & Analysis</strong>
-			    <p>Spatial data can be analyzed to uncover trends and support informed decision-making across various industries. Techniques such as <strong>data grouping, enrichment, and trend analysis</strong> help turn raw geographical data into meaningful business insights that improve efficiency and strategic planning.</p>
-		    </li>
-		    <li>
-			    <strong>Custom Web Applications and Widgets</strong>
-			    <p>The development of <strong>interactive geospatial applications</strong> enables users to engage with spatial data through <strong>custom-built maps, real-time data tables, and navigation tools</strong>. Solutions range from small embedded widgets to full-fledged web applications, ensuring adaptability to various use cases.
-		    </li>
-		    <li>
-			    <strong>Printable Geospatial Data Presentation</strong>
-			    <p>High-quality printable exports are generated in formats such as <strong>PDF and Excel</strong> to support reporting, compliance, and offline analysis. Customizable map designs ensure that spatial data can be effectively communicated in print-ready formats, tailored to meet specific business needs.</p>
-		    </li>
-		    <li>
-			    <strong>Third-Party BI & System Integration</strong>
-			    <p>The integration of geospatial data with <strong>Business Intelligence (BI) platforms</strong> like <strong>Looker</strong>, as well as with <strong>third-party APIs</strong>, enhances analytics and decision-making capabilities. The embedding of <strong>location-based insights into BI ecosystems</strong> ensures greater value extraction from spatial data.</p>
-		    </ul>
-	    </li>
-	    <strong>Key Technologies</strong>
-	    <p>PostgreSQL, PostGIS, BigQuery, NodeJS, ReactJS, OpenStreetMap Valhalla, OpenStreetMap Nominatim, Mapbox, Google Maps, Docker, Docker Compose, AWS, GCP, Hetzner, OpenAI API, Looker, OpenStreetMap Data, WorldPop Data</p>
-	</section>
-        <section id="contact">
-            <h3>Contact</h3>
-            <p>Feel free to reach out to me at <a href="mailto:jmech.dev@gmail.com">jmech.dev@gmail.com</a> if you found anything of interest in the Profile, Projects, or Services sections and would like to explore a potential collaboration or simply have a conversation about the topics covered there.
-            </p>
-        </section>
-
     </div>
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
-        
-	if (window.location.hash) {
-	    console.log(window.location.hash);
-            showSection(window.location.hash.substring(1));
-  	}
-    </script>
 </body>
 </html>
