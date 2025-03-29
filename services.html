@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacek Mech - Personal Page</title>
+    <title>Jacek Mech - Services | Ingestion, Analysis, Routing, QGIS Integration </title>
+    <meta name="description" content="Geospatial data services including data ingestion, geocoding, spatial analysis, Valhalla-based routing, isochrone calculations, custom web applications, printable map exports, and QGIS integration. Tailored solutions for location-based insights and decision-making." />
+    <meta name="keywords" content="geospatial data services, geocoding, data ingestion, Valhalla routing, isochrones, spatial analysis, GIS tools, QGIS integration, custom web mapping, printable maps, geospatial web apps, OpenStreetMap, location intelligence, spatial enrichment, geographic data processing" />
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -76,6 +79,13 @@
             padding: 0px;
             border-left: none;
         }
+        figure {
+            margin-top: 20px;
+        }
+        figcaption {
+            color: grey;
+            font-size: 80%;
+        }
     </style>
     <link rel="shortcut icon" type="image/png" href="favicon-24x24.png">
 </head>
@@ -85,40 +95,61 @@
         <p>Engineering Manager | Software Engineer | GIS Enthusiast </p>
     </header>
     <nav>
-        <a href="index.html#profile">Profile</a>
-        <a href="projects.html#projects">Projects</a>
-        <a href="services.html#services">Services</a>
-        <a href="contact.html#contact">Contact</a>
+        <a href="index.html">Profile</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
 	<section id="services" class="active">
 	    <h3>Services</h3>
 	    <p>As an independent GIS software consultant and developer, I help businesses harness the power of <strong>geospatial</strong> data through <strong>data ingestion, analysis, visualization, and system integration</strong>. I design and build solutions that make location-based data actionable, whether for internal use, customer-facing applications, or third-party integrations. The key areas of focus are outlined below.</p>
 	    
-	    <ul>
-		    <li>
-			    <strong>Geospatial Data Ingestion</strong>
-			    <p>Geospatial data from various sources—such as <strong>OpenStreetMap, WorldPop, and custom datasets</strong>—can be seamlessly integrated into existing business systems or dedicated data stores to enhance analysis and visualization. The process ensures that data is accurate, scalable, and efficiently handled, whether it needs to be synchronized with third-party services or processed through tailored data workflows.</p>
+		<ul>
+		<li>
+				<strong>Geospatial Data Ingestion & Geocoding</strong>
+				<p>I provide services for integrating geospatial data from sources like <b>OpenStreetMap</b> and custom datasets into business systems, dedicated data stores, or my own processing workflows. When location data is available in the form of addresses or place names, I apply <b>geocoding</b> solutions such as <b>Nominatim</b> to convert it into geographic coordinates, enabling richer spatial insights and more actionable data.</p>
+				<figure>
+			  		<figcaption>OpenStreetMap amenities data imported into PostgreSQL and accessed via custom-built RESTful API. See working example at <a href="https://en.twojaokolica.online/region/wojewodztwo-dolnoslaskie/powiat-wroclawski?section=region-leisure" target="_blank">Twoja Okolica .Online</a><figcaption>
+			  		<img src="img/osm-amenities.png" alt="OpenStreetMap amenities data imported into PostgreSQL and accessed via custom-built RESTful API" width="100%">
+				</figure>
 		    </li>
 		    <li>
 			    <strong>Geographical Data Processing & Analysis</strong>
-			    <p>Spatial data can be analyzed to uncover trends and support informed decision-making across various industries. Techniques such as <strong>data grouping, enrichment, and trend analysis</strong> help turn raw geographical data into meaningful business insights that improve efficiency and strategic planning.</p>
+			    <p>I process spatial data to deliver actionable insights through both statistical and network-based approaches. This includes <b>data grouping</b> and <b>enrichment</b> to reveal meaningful patterns, as well as generating <b>navigation routes</b> and calculating <b>isochrones</b> using <b>Valhalla</b>. These methods help uncover spatial relationships, improve decision-making, and support a wide range of geospatial applications.</p>
+
+				<figure>
+			  		<figcaption>WorldPop population data applied to administrative regions extracted from OpenStreetMap dataset. See working example at <a href="https://en.twojaokolica.online/region/wojewodztwo-dolnoslaskie/powiat-wroclawski/gmina-zorawina/wegry" target="_blank">Twoja Okolica .Online</a><figcaption>
+			  		<img src="img/osm-worldpop-population.png" alt="WorldPop population data applied to administrative regions extracted from OpenStreetMap dataset" width="100%">
+				</figure>
 		    </li>
 		    <li>
 			    <strong>Custom Web Applications and Widgets</strong>
-			    <p>The development of <strong>interactive geospatial applications</strong> enables users to engage with spatial data through <strong>custom-built maps, real-time data tables, and navigation tools</strong>. Solutions range from small embedded widgets to full-fledged web applications, ensuring adaptability to various use cases.
+			    <p>I design and develop interactive geospatial applications that allow users to engage with spatial data through custom maps, real-time data tables, and intuitive navigation tools. Depending on the need, I build anything from lightweight <b>embedded</b> widgets to <b>full-featured web applications</b>—ensuring each solution is tailored to the specific use case and seamlessly integrates with existing systems or platforms.</p>
+				<figure>
+			  		<figcaption>Mapbox based map with amenities extracted from OpenStreetMap dataset. See working example at <a href="https://en.twojaokolica.online/region/wojewodztwo-dolnoslaskie/powiat-wroclawski?section=region-leisure&category-groups=hotels&amenity-id=655166" target="_blank">Twoja Okolica .Online</a><figcaption>
+			  		<img src="img/osm-mapbox-map.png" alt="Mapbox based map with amenities extracted from OpenStreetMap dataset" width="100%">
+				</figure>
 		    </li>
 		    <li>
 			    <strong>Printable Geospatial Data Presentation</strong>
-			    <p>High-quality printable exports are generated in formats such as <strong>PDF and Excel</strong> to support reporting, compliance, and offline analysis. Customizable map designs ensure that spatial data can be effectively communicated in print-ready formats, tailored to meet specific business needs.</p>
+			    <p>I create high-quality printable exports of geospatial data in formats such as <b>PDF</b> and <b>Excel</b> to support reporting, compliance, and offline analysis. Each export features customizable map designs and layouts, ensuring that spatial information is communicated clearly and effectively. Outputs are tailored to meet specific business needs, making complex data accessible and presentation-ready.</p>
+				<figure>
+			  		<figcaption>Printable map stretching automatically to selected page size and layout. See working example at <a href="https://en.twojaokolica.online/region/wojewodztwo-dolnoslaskie/powiat-wroclawski?section=region-leisure&category-groups=hotels&amenity-id=655166&map-maximized=true&map-zoom=14.12349133557127&map-lon=17.03712440000163&map-lat=50.98186863096225" target="_blank">Twoja Okolica .Online</a><figcaption>
+			  		<img src="img/osm-mapbox-map-printable.png" alt="Printable map stretching automatically to selected page size and layout" width="100%">
+				</figure>
 		    </li>
 		    <li>
-			    <strong>Third-Party BI & System Integration</strong>
-			    <p>The integration of geospatial data with <strong>Business Intelligence (BI) platforms</strong> like <strong>Looker</strong>, as well as with <strong>third-party APIs</strong>, enhances analytics and decision-making capabilities. The embedding of <strong>location-based insights into BI ecosystems</strong> ensures greater value extraction from spatial data.</p>
-		    </ul>
-	    </li>
+			    <strong>Geospatial Data Integration with GIS Tools</strong>
+			    <p>I prepare and export geospatial data for use in desktop GIS applications such as <b>QGIS</b>, enabling advanced spatial analysis, custom mapping, and in-depth visualization. By supporting standard geospatial formats and coordinate systems, I ensure full compatibility with professional GIS workflows. This integration allows spatial datasets to be explored and utilized beyond their initial processing environments, extending their value across tools and contexts.</p>
+			<figure>
+		  		<figcaption>OpenStreetMap data imported via PostGIS to QGIS for further analysis - number of restaurants (red), pubs (blue) and hotels (yellow) in administrative regions in Poland.<figcaption>
+		  		<img src="img/osm-qgis-analysis.png" alt="Printable map stretching automatically to selected page size and layout" width="100%">
+			</figure>
+		    </li>
+	    </ul>
 	    <strong>Key Technologies</strong>
-	    <p>PostgreSQL, PostGIS, BigQuery, NodeJS, ReactJS, OpenStreetMap Valhalla, OpenStreetMap Nominatim, Mapbox, Google Maps, Docker, Docker Compose, AWS, GCP, Hetzner, OpenAI API, Looker, OpenStreetMap Data, WorldPop Data</p>
+	    <p>PostgreSQL, PostGIS, NodeJS, ReactJS, OpenStreetMap Valhalla, OpenStreetMap Nominatim, Mapbox, Docker, Docker Compose, AWS, GCP, Hetzner, OpenAI API, QGIS, OpenStreetMap Data, WorldPop Data</p>
 	</section>
     </div>
 </body>
